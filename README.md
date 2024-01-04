@@ -17,7 +17,9 @@ Nesta seção serão fornecidas intruções de como instalar este projeto em seu
 
 __*:__ Faça a extração da pasta em seu computador
 
-2. O projeto já está instalado 👍
+2. O projeto já está instalado 
+
+__OBS:__ Caso não tenha o Python instalado em seu computador, você poderá fazer o download [aqui](https://www.python.org/downloads/) ou pela Microsft Store, nos Windows 10 e 11.
 
 ---
 ### Como Usar
