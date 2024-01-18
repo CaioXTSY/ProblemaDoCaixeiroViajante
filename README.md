@@ -4,12 +4,14 @@ O __Problema do Caixeiro-Viajante__ (__PCV__) é um problema que tenta determina
 
 Neste projeto será feito uma simulação deste problema a partir das bases de dados, __ATT48__, __DANTZIG42__, __FRI26__, __GR17__ e __P01__, fornecidas em [TSP Data for the Traveling Salesperson Problem](https://people.sc.fsu.edu/~jburkardt/datasets/tsp/tsp.html?authuser=2).
 
+__Observações:__ Até o dia 30-01-2024, este projeto consta somente na leitura e transformação das bases de dados em uma estrutura de dados, em específico num dicionário python.
+
 ---
 ### Instalação
 
 Nesta seção serão fornecidas intruções de como instalar este projeto em seu computador.
 
-1. Clique em __<> Code__ e então, clone este repositório (caso tenha git) ou faça o download do repositório como ZIP*.
+1. Clique em __<> Code__ e então, clone este repositório (caso tenha GIT) ou faça o download do repositório como ZIP*.
 
 <p align="center">
     <img src="./imgs/insta.png">
@@ -18,6 +20,8 @@ Nesta seção serão fornecidas intruções de como instalar este projeto em seu
 __*:__ Faça a extração da pasta em seu computador
 
 2. O projeto já está instalado 👍
+
+__OBS:__ Caso não tenha o Python instalado em seu computador, você poderá fazer o download [aqui](https://www.python.org/downloads/) ou pela Microsoft Store, nos Windows 10 e 11.
 
 ---
 ### Como Usar
@@ -30,13 +34,11 @@ __VS Code__
 
 2. Na pasta do repositório, clique em __src__ e então no arquivo __main.py__
 
-3. Rode o programa (Obs: Você deve ter o Python instalado, assim como extensões para o mesmo)
+3. Rode o programa (Obs: Você deve ter o Python instalado, assim como as extensões do VS Code para o mesmo)
 
-4. Forneça o nome do arquivo que você quer utilizar, como de exemplo, o arquivo five_d.txt (inclua a extensão)
+4. Forneça o índice do arquivo que você quer utilizar
 
-5. Forneça a quantidade de cidades (o número de cidades pode ser encontrado no link fornecido na seção introdutória)
-
-6. O resultado será apresentado depois de um tempo
+5. O resultado será apresentado após a execução do passo anterior
 
 <p align="center">
     <img src="./imgs/vscode.png">
@@ -46,13 +48,11 @@ __Terminal__
 
 1. Abra o Terminal/PowerShell/Command Prompt
 
-2. Navegue até a pasta com o código __main.py__ e então, digite __python main.py__
+2. Navegue até o diretório com o código __main.py__ e então, digite __python main.py__
 
-3. Forneça o nome do arquivo que você quer utilizar, como de exemplo, o arquivo five_d.txt (inclua a extensão)
+3. Forneça o índice do arquivo que você quer utilizar
 
-4. Forneça a quantidade de cidades (o número de cidades pode ser encontrado no link fornecido na seção introdutória)
-
-5. O resultado será apresentado depois de um tempo
+4. O resultado será apresentado depois da execução do passo anterior
 
 <p align="center">
     <img src="./imgs/term.png">
