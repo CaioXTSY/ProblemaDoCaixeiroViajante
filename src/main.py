@@ -1,6 +1,7 @@
 from pathlib import Path
 import file_converter
 from algo.prim import prim
+from algo import bf
 
 def list_files_in_directory(directory):
     files = list(directory.glob('*'))
@@ -49,7 +50,9 @@ def main():
         elif alg_choice == '3':
             pass
         elif alg_choice == '4':
-            pass
+            start = 1
+            tour, peso_aprox, dist_esp, margem = bf.approximate_tsp(graph, start, file_index)
+            print(f"Tour: {tour}, Peso total: {peso_aprox}, Valor esperado: {dist_esp}, Margem de erro: {margem:.3f}%")
         else:
             print("Escolha de algoritmo inválida.")
     else:
