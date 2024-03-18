@@ -4,7 +4,11 @@ O __Problema do Caixeiro-Viajante__ (__PCV__) é um problema que tenta determina
 
 Neste projeto será feito uma simulação deste problema a partir das bases de dados, __ATT48__, __DANTZIG42__, __FRI26__, __GR17__ e __P01__, fornecidas em [TSP Data for the Traveling Salesperson Problem](https://people.sc.fsu.edu/~jburkardt/datasets/tsp/tsp.html?authuser=2).
 
-__Observações:__ Até o dia 30-01-2024, este projeto consta somente na leitura e transformação das bases de dados em uma estrutura de dados, em específico num dicionário python.
+O objetivo é encontrar soluções aproximadas do desejado informado nas bases acima. Isto será feito por implementações simples e adaptadas para o pcv, dos algoritmos de __Prim__, __Dijkstra__, __Christofides__ e __Força Bruta__, procurando achar soluções próximas (maiores ou menores) ao desejado.
+
+__Observações:__
+* Até o dia 30-01-2024, este projeto consta somente na leitura e transformação das bases de dados em uma estrutura de dados, em específico num dicionário python.
+* A partir do dia 18-03-2024, este projeto possui a solução aproximada para cada um dos tipos de algoritmos requisitados pela professora.
 
 ---
 ### Instalação
@@ -14,7 +18,7 @@ Nesta seção serão fornecidas intruções de como instalar este projeto em seu
 1. Clique em __<> Code__ e então, clone este repositório (caso tenha GIT) ou faça o download do repositório como ZIP*.
 
 <p align="center">
-    <img src="./imgs/insta.png">
+    <img src="./imgs/">
 </p>
 
 __*:__ Faça a extração da pasta em seu computador
@@ -38,10 +42,12 @@ __VS Code__
 
 4. Forneça o índice do arquivo que você quer utilizar
 
-5. O resultado será apresentado após a execução do passo anterior
+5. Forneça o índice do algoritmo que você quer utilizar
+
+6. O resultado aproximado será apresentado após a execução do passo anterior
 
 <p align="center">
-    <img src="./imgs/vscode.png">
+    <img src="./imgs/">
 </p>
 
 __Terminal__
@@ -52,10 +58,12 @@ __Terminal__
 
 3. Forneça o índice do arquivo que você quer utilizar
 
-4. O resultado será apresentado depois da execução do passo anterior
+4. Forneça o índice do algoritmo que você quer utilizar
+
+4. O resultado aproximado será apresentado depois da execução do passo anterior
 
 <p align="center">
-    <img src="./imgs/term.png">
+    <img src="./imgs/">
 </p>
 
 ---
@@ -96,4 +104,6 @@ __Não obrigatório:__ Git, VS Code.
 ---
 ### Informações Extras
 
-Este projeto está sendo desenvolvido como requisito de nota para a disciplina de __Teoria dos Grafos__, ministrada pela professora __Raquel Cabral__, no 4º período do curso de __Ciências da Computação__ pela __UFAL Campus Arapiraca__. 
+Este projeto está sendo desenvolvido como requisito de nota para a disciplina de __Teoria dos Grafos__, ministrada pela professora __Raquel Cabral__, no 4º período do curso de __Ciências da Computação__ pela __UFAL Campus Arapiraca__.
+
+Ao ser um problema O(n!), não existem algoritmos simples capazes de resolver o Problema do Caixeiro Viajante. Assim, neste repositório as soluções propostas buscam utilizar adaptações dos algoritmos propostos pela professora para se aproximar dos resultados apresentados nas bases de dados fonte.
