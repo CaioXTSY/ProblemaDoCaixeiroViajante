@@ -18,7 +18,7 @@ Nesta seção serão fornecidas intruções de como instalar este projeto em seu
 1. Clique em __<> Code__ e então, clone este repositório (caso tenha GIT) ou faça o download do repositório como ZIP*.
 
 <p align="center">
-    <img src="./imgs/">
+    <img src="./imgs/install.png">
 </p>
 
 __*:__ Faça a extração da pasta em seu computador
@@ -47,7 +47,7 @@ __VS Code__
 6. O resultado aproximado será apresentado após a execução do passo anterior
 
 <p align="center">
-    <img src="./imgs/">
+    <img src="./imgs/vscode.png">
 </p>
 
 __Terminal__
@@ -63,7 +63,7 @@ __Terminal__
 4. O resultado aproximado será apresentado depois da execução do passo anterior
 
 <p align="center">
-    <img src="./imgs/">
+    <img src="./imgs/termn.png">
 </p>
 
 ---
