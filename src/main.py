@@ -1,7 +1,8 @@
 from pathlib import Path
 import file_converter
 from algo.prim import prim
-from algo import bf
+from algo.bf import approximate_tsp
+from algo.dijkstra import dijkstra
 
 def list_files_in_directory(directory):
     files = list(directory.glob('*'))
@@ -46,13 +47,13 @@ def main():
         if alg_choice == '1':
             prim(graph)
         elif alg_choice == '2':
-            pass
+            start = 1
+            dijkstra(graph, start, file_index)
         elif alg_choice == '3':
             pass
         elif alg_choice == '4':
             start = 1
-            tour, peso_aprox, dist_esp, margem = bf.approximate_tsp(graph, start, file_index)
-            print(f"Tour: {tour}, Peso total: {peso_aprox}, Valor esperado: {dist_esp}, Margem de erro: {margem:.3f}%")
+            approximate_tsp(graph, start, file_index)
         else:
             print("Escolha de algoritmo inválida.")
     else:
