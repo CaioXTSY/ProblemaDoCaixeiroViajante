@@ -15,6 +15,9 @@ def dijkstra(graph, start, file_index):
     distances[start] = 0
     priority_queue = [(0, start)]
 
+    optimal_length = optimal_tour_length.get(file_index)
+    threshold_distance = optimal_length * 1.5
+
     while priority_queue:
         current_distance, current_vertex = heapq.heappop(priority_queue)
 
@@ -23,6 +26,9 @@ def dijkstra(graph, start, file_index):
 
         total_distance += current_distance
 
+        if total_distance > threshold_distance:
+            break
+
         for neighbor, weight in enumerate(graph[current_vertex], start=1):
             if weight > 0:
                 distance = current_distance + weight
@@ -30,7 +36,6 @@ def dijkstra(graph, start, file_index):
                     distances[neighbor] = distance
                     heapq.heappush(priority_queue, (distance, neighbor))
 
-    optimal_length = optimal_tour_length.get(file_index)
     percentage_difference = abs(total_distance - optimal_length) / optimal_length * 100
 
     print(f"Peso total: {total_distance}\nValor esperado: {optimal_length}\nMargem de erro: {percentage_difference:.3f}%")
