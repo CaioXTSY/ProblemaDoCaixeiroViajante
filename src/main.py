@@ -3,6 +3,7 @@ import file_converter
 from algo.prim import prim
 from algo.bf import approximate_tsp
 from algo.dijkstra import dijkstra
+from algo.christofides import algoritmo_christofides
 
 def list_files_in_directory(directory):
     files = list(directory.glob('*'))
@@ -50,7 +51,7 @@ def main():
             start = 1
             dijkstra(graph, start, file_index)
         elif alg_choice == '3':
-            pass
+            algoritmo_christofides(graph)
         elif alg_choice == '4':
             start = 1
             approximate_tsp(graph, start, file_index)

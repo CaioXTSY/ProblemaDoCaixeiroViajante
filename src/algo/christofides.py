@@ -71,12 +71,14 @@ def circuito_euleriano(grafo, no_inicial):
     return circuito
 
 
-def algoritmo_christofides(distancias):
+def algoritmo_christofides(graph):
     """Implementação do algoritmo de Christofides."""
-    n = len(distancias)
+    n = len(graph)
 
     # Construção do grafo completo
-    grafo = distancias
+    grafo = []
+    for i in graph:
+        grafo.append(graph[i])
 
     # Passos do algoritmo de Christofides
     arvore = arvore_geradora_minima(grafo)
@@ -113,4 +115,4 @@ def algoritmo_christofides(distancias):
         if i not in caminho_hamiltoniano:
             caminho_hamiltoniano.append(i)
 
-    return caminho_hamiltoniano
+    print(caminho_hamiltoniano)
