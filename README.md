@@ -73,6 +73,32 @@ __Terminal__
 </p>
 
 ---
+
+### Resultados Obtidos
+
+| Algoritmo   | Base de Dados | Peso Total | Valor Esperado |
+|-------------|---------------|------------|----------------|
+| Prim        | ATT48         | 27670      | 27670              |
+| Prim        | DANTZIG42     | 591        | 591              |
+| Prim        | FRI26         | 741        | 741              | 
+| Prim        | GR17          | 1421       | 1421              |
+| Prim        | P01           | 260        | 260              |
+| Dijkstra    | ATT48             | 50831.0    | 33523          |
+| Dijkstra    | DANTZIG42             | 1126.0     | 699            |
+| Dijkstra    | FRI26             | 1436.0     | 937            |
+| Dijkstra    | GR17             | 3401.0     | 2085           |
+| Dijkstra    | P01             | 441.0      | 291            |
+| Força Bruta | ATT48             | 45175.0    | 33523          |
+| Força Bruta | DANTZIG42             | 960.0      | 699            |
+| Força Bruta | FRI26             | 1037.0     | 937            |
+| Força Bruta | GR17             | 2686.0     | 2085           |
+| Força Bruta | P01             | 303.0      | 291            |
+| Christofides| ATT48             | 1176       | 33523          |
+| Christofides| DANTZIG42             | 903        | 699            |
+| Christofides| FRI26             | 351        | 937            |
+| Christofides| GR17             | 153        | 2085           |
+| Christofides| P01             | 120        | 291            |
+
 ### Licença
 
 __Projeto:__ <br>
