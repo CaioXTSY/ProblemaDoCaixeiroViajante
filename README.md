@@ -23,11 +23,17 @@ Nesta seção serão fornecidas intruções de como instalar este projeto em seu
 
 __*:__ Faça a extração da pasta em seu computador
 
-2. O projeto já está instalado 👍
+2. Abra o terminal ou prompt de comando e instale a biblioteca NetworkX com o seguinte comando:
+
+    ```bash
+    pip install networkx
+    ```
+
+    Isso permitirá a manipulação de grafos dentro do projeto.
+
+3. O projeto agora está instalado e pronto para ser usado.
 
 __OBS:__ Caso não tenha o Python instalado em seu computador, você poderá fazer o download [aqui](https://www.python.org/downloads/) ou pela Microsoft Store, nos Windows 10 e 11.
-
----
 ### Como Usar
 
 Nesta seção serão fornecidas instruções de como usar este projeto.
@@ -97,7 +103,7 @@ __OBS:__ Para realizar as simulações com datasets que possuem um valor alto de
 ---
 ### Software Necessário
 
-Todo o projeto está rodando no sistema operacional Windows/Linux, é necessário também ter o Python instalado em sua máquina.
+Todo o projeto está rodando no sistema operacional Windows/Linux, é necessário também ter o Python e a biblioteca NetworkX instalado em sua máquina.
 
 __Não obrigatório:__ Git, VS Code.
 
