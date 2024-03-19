@@ -93,11 +93,11 @@ __Terminal__
 | Força Bruta | FRI26             | 1037.0     | 937            |
 | Força Bruta | GR17             | 2686.0     | 2085           |
 | Força Bruta | P01             | 303.0      | 291            |
-| Christofides| ATT48             | 1176       | 33523          |
-| Christofides| DANTZIG42             | 903        | 699            |
-| Christofides| FRI26             | 351        | 937            |
-| Christofides| GR17             | 153        | 2085           |
-| Christofides| P01             | 120        | 291            |
+| Christofides| ATT48             | 143591       | 33523          |
+| Christofides| DANTZIG42             | 699        | 699            |
+| Christofides| FRI26             | 1137        | 937            |
+| Christofides| GR17             | 3393        | 2085           |
+| Christofides| P01             | 560        | 291            |
 
 ### Licença
 

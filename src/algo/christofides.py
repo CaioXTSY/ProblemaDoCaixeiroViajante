@@ -116,3 +116,18 @@ def algoritmo_christofides(graph):
             caminho_hamiltoniano.append(i)
 
     print(caminho_hamiltoniano)
+    print(calcular_valor_total_caminho(grafo, caminho_hamiltoniano))
+
+def calcular_valor_total_caminho(grafo, caminho_hamiltoniano):
+    # Ajuste dos índices do caminho para a indexação baseada em 0.
+    caminho_ajustado = [cidade - 1 for cidade in caminho_hamiltoniano]
+
+    valor_total = 0
+    for i in range(1, len(caminho_ajustado)):
+        valor_total += grafo[caminho_ajustado[i-1]][caminho_ajustado[i]]
+
+    # Adiciona o custo para retornar ao ponto de partida, se necessário.
+    # Se seu problema não requer retornar ao início, remova esta linha.
+    valor_total += grafo[caminho_ajustado[-1]][caminho_ajustado[0]]
+
+    return valor_total
